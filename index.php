@@ -139,7 +139,7 @@ session_start();
                         let p = document.createElement('p');
                         div_anime.classList.add("col-md-3");
                         div_anime.style.display = "inline-block";
-                        red_anime.href = "watch.php?anime=" + element.url; //pegar esse atributo 
+                        red_anime.<a href="watch.php?anime=<?php echo urlencode(element.url); ?>"> //pegar esse atributo 
                         img_anime.src = `${element.image}`;
                         title_anime.classList.add("col-md-12");
                         img_anime.classList.add('ImageSizeAttr');
